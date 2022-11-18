@@ -9,5 +9,6 @@ export class AppComponent {
  
   title = 'Welcome to my homepage';
   show = false;
+  showSupport = false
 
 }
