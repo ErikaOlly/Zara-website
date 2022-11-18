@@ -5,14 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideMenuComponent } from './components/side menu/side-menu.component';
 
+import {LoginModule} from './login/login.module';
+
 @NgModule({
+  // Qui importo solo i componenti
   declarations: [
     AppComponent,
     SideMenuComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

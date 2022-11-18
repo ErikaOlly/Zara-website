@@ -33,7 +33,6 @@ export class SideMenuComponent {
 
 }
 
-
 loadMenuItems(item) {
    this.menuItemsChosen= this.menuItems.find(x => x.itemTitle === item.itemTitle)
 }

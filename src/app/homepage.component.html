@@ -18,7 +18,7 @@
     </div>
     <div class="flex justify-center items-start space-x-8">
         <div class="hover-header border-solid border-white border-b w-20 mr-8">CERCA</div>
-        <span class="hover-header">LOGIN</span>
+        <span class="hover-header" *ngIf="!showLogin" (click)="onConsoleLog()">{{(showLogin)? '':'prova2'}}</span>
         <span class="hover-header">SUPPORTO</span>
         <span class="material-symbols-outlined hover-header">
             add_shopping_cart
@@ -26,6 +26,11 @@
     </div>
 </div>
 
-<div class="fixed top-32 left-0 bottom-0">
+
+<div class="fixed top-32 left-0 bottom-0 bg-red-800">
     <side-menu *ngIf="show"></side-menu>
+</div>
+
+<div class="h-screen bg-red-800 z-50">
+    <login *ngIf="showLogin"></login>
 </div>
